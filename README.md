@@ -12,6 +12,10 @@ Le but est d'avoir un stack mern (mongo express react node) cohérent avec un sy
 Ce sera le core de notre backend pour traiter les requêtes
 ## NPM
 Le package manager de node est le système que je vais utiliser par défaut. Pour installer une nouvelle dépendance, il suffit de faire npm install \<nom du package\>. Utiliser --save pour toute dépendance qu'on veut ajouter au moment du runtime, --save-dev pour toute dépendance qui n'est pas nécessaire pour le runtime.
+## Babel 
+permet de traduire du code es6 et jsx directement en javascript
+## Eslint
+Surveille la qualité du code
 # Journal
 ## 27.06.2017
 - Reprise de express pour lancer le serveur, avec un hello world à la con.
@@ -22,7 +26,7 @@ Le package manager de node est le système que je vais utiliser par défaut. Pou
     * client
   * dist
     * server.bundle.js  // code compilé de ce qui est dans server
-    * public            // contient le code complié qui est dans la partie client avec les images
+    * public            // contient le code compilé qui est dans la partie client avec les images
       * images
       * app.bundle.js
       * vendor.bundle.js
@@ -35,6 +39,9 @@ Le package manager de node est le système que je vais utiliser par défaut. Pou
 - J'hésite entre commencer à faire le front-end (react etc.. ) ou plutôt à passer directement à l'authentification. Je pense que ce serait mieux de me mettre directement à React.... en fait non je vais commencer par eslint :). Il est très important d'avoir du code correctement écrit. Donc let's go.
 - Après mûre réflexion, plutôt que de me prendre la tête avec des règles que je devrais réfléchir, autant reprendre comme base ce qui a été fait par d'autres. Donc j'ai regardé le eslint de https://github.com/vasansr/pro-mern-stack. Il me semble suffisant pour commencer.
 - Il m'a fallu un moment pour me rendre compte que ne sera pris en compte eslint dans atom que en le relancant... comment perdre du temps pour rien. Pour finir j'ai simplement installé eslint globalement, lancé eslint --init, répondu aux questions et adapté un poil.
+- Bon c'est le moment de se mettre à react, je pense que ça va me prendre un moment si je fais from scratch.
+- Commençons par l'installer, ça peut aider :). Plus sérieusement, je suis les infos sur la page officieille de react, ce qui est à mon avis la meilleure façon de commencer.
+- Alors, j'ai perdu pas mal de temps à trouver (ou faire marcher c'est selon) le parser de babel, il semble que le babelrc ne soit pas correctement pris en compte. Il faudra que je clean cette partie. De plus pour arriver à setter une route public avec express, je ne sais pas pourquoi, mais il semble qu'en utilisant la librairie path, j'ai un peu merdouillé. Bref, tout est bien qui finit bien .. ou presque. Je dois rajouter dans mon build pipeline la suppression de fichiers (supprimer le répertoire dist) et je pense que ce sera déjà pas mal pour aujourd'hui.
 ## 25.06.2017
 - Création du projet (npm init)
 - Création du projet git sur github (git init et git remote add origin https://github.com/Lifwill/mern.git )
