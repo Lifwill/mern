@@ -48,6 +48,7 @@ Surveille la qualité du code
   * un controlleur qui permet de lister, créer, supprimer, etc.. les utilisateurs
   * Les vues react correspondantes.
   Enfin je vais commencer disons :)
+- Installer mongoose c'est pas trop compliqué. J'ai repris un User.js qui contient déjà une fonction de hash du mot de passe et une fonction de check du mot de passe. Au passage, j'avais pas checké le script compile avant de le commiter... shame on me.
 ## 25.06.2017
 - Création du projet (npm init)
 - Création du projet git sur github (git init et git remote add origin https://github.com/Lifwill/mern.git )
