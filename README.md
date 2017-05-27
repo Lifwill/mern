@@ -42,6 +42,12 @@ Surveille la qualité du code
 - Bon c'est le moment de se mettre à react, je pense que ça va me prendre un moment si je fais from scratch.
 - Commençons par l'installer, ça peut aider :). Plus sérieusement, je suis les infos sur la page officieille de react, ce qui est à mon avis la meilleure façon de commencer.
 - Alors, j'ai perdu pas mal de temps à trouver (ou faire marcher c'est selon) le parser de babel, il semble que le babelrc ne soit pas correctement pris en compte. Il faudra que je clean cette partie. De plus pour arriver à setter une route public avec express, je ne sais pas pourquoi, mais il semble qu'en utilisant la librairie path, j'ai un peu merdouillé. Bref, tout est bien qui finit bien .. ou presque. Je dois rajouter dans mon build pipeline la suppression de fichiers (supprimer le répertoire dist) et je pense que ce sera déjà pas mal pour aujourd'hui.
+- Je ne résiste pas, on en est à ERN ... il manque un M ... mongo. C'est vrai que je parlais d'authentification, mais de toute façon il me faut une base de donnée pour stoquer les utilisateurs. Je pense que ce serait bien de commencer par là.
+  * Mongoose
+  * Un model d'utilisateur
+  * un controlleur qui permet de lister, créer, supprimer, etc.. les utilisateurs
+  * Les vues react correspondantes.
+  Enfin je vais commencer disons :)
 ## 25.06.2017
 - Création du projet (npm init)
 - Création du projet git sur github (git init et git remote add origin https://github.com/Lifwill/mern.git )
