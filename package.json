@@ -4,20 +4,27 @@
   "description": "Mern basics system",
   "main": "server.js",
   "scripts": {
-    "start": "node ./dist/server.js",
-    "compile": "./node_modules/.bin/webpack --config webpack-server.config.js"
+    "start": "node ./dist/server.bundle.js",
+    "clean": "rimraf dist",
+    "compile": "clean && webpack --config webpack-server.config.js && webpack --config webpack-client.config.js"
   },
   "author": "Jonathan Wafellman",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.15.3"
+    "express": "^4.15.3",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4"
   },
   "devDependencies": {
+    "babel-cli": "^6.24.1",
     "babel-core": "^6.24.1",
     "babel-loader": "^7.0.0",
     "babel-preset-env": "^1.5.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
     "eslint": "^3.19.0",
     "eslint-plugin-react": "^7.0.1",
+    "rimraf": "^2.6.1",
     "webpack": "^2.6.1",
     "webpack-node-externals": "^1.6.0"
   }
