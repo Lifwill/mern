@@ -30,10 +30,15 @@ Le package manager de node est le système que je vais utiliser par défaut. Pou
   * package.json
 - Bon une chose à la fois, installons webpack : npm install --save-dev webpack. Dans un premier temps, je vais tenter de simplement copier le fichier server.js depuis le dossier src/server jusqu'au dossier dist.
 - C'est pas trop compliqué, j'ai juste du trouver un moyen de ne pas intégrer express dans le build (j'ai utilisé exclude dans la config webpack).
+- Bon au tour de babel, pour le coup, je ne m'ennuie pas trop, je vais direct sur le site de babel https://babeljs.io/docs/setup/#installation.
+- Pourquoi ça ne marche jamais du premier coup ? :D Le exclude ne fonctionnait pas, il semble qu'il faut ajouter un bable-external machin (webpack-node-externals), et maintenant ça marche :).
+- J'hésite entre commencer à faire le front-end (react etc.. ) ou plutôt à passer directement à l'authentification. Je pense que ce serait mieux de me mettre directement à React.... en fait non je vais commencer par eslint :). Il est très important d'avoir du code correctement écrit. Donc let's go.
+- Après mûre réflexion, plutôt que de me prendre la tête avec des règles que je devrais réfléchir, autant reprendre comme base ce qui a été fait par d'autres. Donc j'ai regardé le eslint de https://github.com/vasansr/pro-mern-stack. Il me semble suffisant pour commencer.
+- Il m'a fallu un moment pour me rendre compte que ne sera pris en compte eslint dans atom que en le relancant... comment perdre du temps pour rien. Pour finir j'ai simplement installé eslint globalement, lancé eslint --init, répondu aux questions et adapté un poil.
 ## 25.06.2017
 - Création du projet (npm init)
 - Création du projet git sur github (git init et git remote add origin https://github.com/Lifwill/mern.git )
 - Début de la tentative de créer un simple projet express (npm install express --save). J'ai choisi d'utiliser express parce que c'est le système qui s'est imposé pour le dévelopement de service web avec node.
-- Nouveau dossier créé node_modules de machin qu'on veut pas sur le git (dépendance, etc..), création d'un .gitignore, un simple fichier texte qui exclut node_modules
+- Nouveau dossier créé node_modules de machin qu'on veut pas sur le git (dépendance, etc..), création d'un .gitignore, un simple fichier texte qui exclut node_modules 
 ## initial
 - Je travaille avec une vm (vmware) avec ubuntu installé. J'ai déjà node installé en utilisant nvm. J'utilise l'éditeur atom que je suis par ailleurs en train d'apprendre à utiliser.
