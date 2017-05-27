@@ -4,11 +4,15 @@
   "description": "Mern basics system",
   "main": "server.js",
   "scripts": {
-    "start": "node ./server/server.js"
+    "start": "node ./dist/server.js",
+    "compile": "./node_modules/.bin/webpack --config webpack-server.config.js"
   },
   "author": "Jonathan Wafellman",
   "license": "MIT",
   "dependencies": {
     "express": "^4.15.3"
+  },
+  "devDependencies": {
+    "webpack": "^2.6.1"
   }
 }
