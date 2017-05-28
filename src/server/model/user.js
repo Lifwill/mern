@@ -8,10 +8,8 @@ const UserSchema = new mongoose.Schema({
     index: { unique: true }
   },
   password: String,
-  name: String,
-  provider: String,
-  providerID: String,
-  jwtToken: String
+  firstname: String,
+  lastname: String,
 });
 
 // Compare the passed password with the value in the database. A model method.

@@ -4,6 +4,10 @@
   "description": "Mern basics system",
   "main": "server.js",
   "scripts": {
+
+    "compile-tools": "rimraf tools/dist && webpack --config webpack-tools.config.js",
+    "populate": "node ./tools/dist/populateDatabase.js",
+
     "start": "node ./dist/server.bundle.js",
     "clean": "rimraf dist",
     "compile": "npm run clean && webpack --config webpack-server.config.js && webpack --config webpack-client.config.js"
@@ -12,6 +16,7 @@
   "license": "MIT",
   "dependencies": {
     "bcryptjs": "^2.4.3",
+    "body-parser": "^1.17.2",
     "express": "^4.15.3",
     "mongoose": "^4.10.3",
     "react": "^15.5.4",

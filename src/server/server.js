@@ -1,6 +1,10 @@
 import express from 'express';
 import mongoose from 'mongoose';
+import bodyParser from 'body-parser';
+
 import serverConfig from './serverConfig';
+
+import userController from './controller/userController';
 
 const app = express();
 mongoose.connect(serverConfig.mongoURL, (error) => {
@@ -13,6 +17,9 @@ mongoose.connect(serverConfig.mongoURL, (error) => {
   //dummyData();
 });
 
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use('/api/user', userController);
 app.use('/public', express.static('dist/public'));
 app.get('/', function (req, res) {
   res.send(`<html>
