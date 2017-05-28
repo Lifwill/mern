@@ -16,7 +16,13 @@ Le package manager de node est le système que je vais utiliser par défaut. Pou
 permet de traduire du code es6 et jsx directement en javascript
 ## Eslint
 Surveille la qualité du code
+## Mongo via mongoose
+La base de donnée non-sql qui utilise le javascript.
 # Journal
+## 28.06.2017
+- Bon, maintenant que mongo semble connecté, il faut qu'e je crée le controlleur pour créer de nouveaux users, ainsi que les routes express, ainsi que la vue qui me permet et de les lister et de les créer.
+- Je vais commencer par créer un système qui peut lister et créer des utilisateurs. Pour ça je vais déjà ajouter body-parser (pour parser les réponses et avoir les paramètres facilement dans la requête). Ensuite je mets les routes ...
+- Je dois avouer que je suis moins motivé aujourd'hui et j'ai été occupé, j'ai très peu avancé jusqu'à maintenant. J'ai créé le controlleur api user qui va chercher les users. J'ai aussi fait un petit script pour peupler de users.
 ## 27.06.2017
 - Reprise de express pour lancer le serveur, avec un hello world à la con.
 - Recherche d'utilisation d'ES6. C'est là que commence la m... :D Je peux simplerment installer babel et utiliser babel-node pour lancer le serveur, ou je peux utiliser un "task runner" qui permettra de transformer le code es6 (toujours en utilisant babel) vers du code que le serveur peut comprendre
@@ -48,10 +54,11 @@ Surveille la qualité du code
   * un controlleur qui permet de lister, créer, supprimer, etc.. les utilisateurs
   * Les vues react correspondantes.
   Enfin je vais commencer disons :)
+- Installer mongoose c'est pas trop compliqué. J'ai repris un User.js qui contient déjà une fonction de hash du mot de passe et une fonction de check du mot de passe. Au passage, j'avais pas checké le script compile avant de le commiter... shame on me.
 ## 25.06.2017
 - Création du projet (npm init)
 - Création du projet git sur github (git init et git remote add origin https://github.com/Lifwill/mern.git )
 - Début de la tentative de créer un simple projet express (npm install express --save). J'ai choisi d'utiliser express parce que c'est le système qui s'est imposé pour le dévelopement de service web avec node.
 - Nouveau dossier créé node_modules de machin qu'on veut pas sur le git (dépendance, etc..), création d'un .gitignore, un simple fichier texte qui exclut node_modules 
 ## initial
-- Je travaille avec une vm (vmware) avec ubuntu installé. J'ai déjà node installé en utilisant nvm. J'utilise l'éditeur atom que je suis par ailleurs en train d'apprendre à utiliser.
+- Je travaille avec une vm (vmware) avec ubuntu installé. J'ai déjà node installé en utilisant nvm. J'utilise l'éditeur atom que je suis par ailleurs en train d'apprendre à utiliser. Mongo db est déjà installé et déjà en cours d'utilisation.
