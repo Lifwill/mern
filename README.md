@@ -19,6 +19,8 @@ Surveille la qualité du code
 ## Mongo via mongoose
 La base de donnée non-sql qui utilise le javascript.
 # Journal
+## 29.06.2017
+- Allez hop, profitons d'une petit voyage dans le train pour faire un simple morceau de code react qui liste les noms, prénoms des utilisateurs.
 ## 28.06.2017
 - Bon, maintenant que mongo semble connecté, il faut qu'e je crée le controlleur pour créer de nouveaux users, ainsi que les routes express, ainsi que la vue qui me permet et de les lister et de les créer.
 - Je vais commencer par créer un système qui peut lister et créer des utilisateurs. Pour ça je vais déjà ajouter body-parser (pour parser les réponses et avoir les paramètres facilement dans la requête). Ensuite je mets les routes ...
