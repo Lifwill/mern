@@ -19,6 +19,8 @@ Surveille la qualité du code
 ## Mongo via mongoose
 La base de donnée non-sql qui utilise le javascript.
 # Journal
+## 30.06.2017
+- J'ai commencé à faire le formulaire de création d'utilisateur. Il faudra aussi créer la fonction dans le controller qui permet de créer les utilisateurs.
 ## 29.06.2017
 - Allez hop, profitons d'une petit voyage dans le train pour faire un simple morceau de code react qui liste les noms, prénoms des utilisateurs.
 ## 28.06.2017
